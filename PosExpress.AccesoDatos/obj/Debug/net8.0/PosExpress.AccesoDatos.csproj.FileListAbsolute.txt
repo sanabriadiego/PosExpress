@@ -1,0 +1,14 @@
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\bin\Debug\net8.0\PosExpress.AccesoDatos.deps.json
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\bin\Debug\net8.0\PosExpress.AccesoDatos.dll
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\bin\Debug\net8.0\PosExpress.AccesoDatos.pdb
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\obj\Debug\net8.0\PosExpress.AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\obj\Debug\net8.0\PosExpress.AccesoDatos.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\obj\Debug\net8.0\PosExpress.AccesoDatos.AssemblyInfo.cs
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\obj\Debug\net8.0\PosExpress.AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\obj\Debug\net8.0\PosExpress.AccesoDatos.dll
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\obj\Debug\net8.0\refint\PosExpress.AccesoDatos.dll
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\obj\Debug\net8.0\PosExpress.AccesoDatos.pdb
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\obj\Debug\net8.0\ref\PosExpress.AccesoDatos.dll
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\bin\Debug\net8.0\PosExpress.AccesoDatos.runtimeconfig.json
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\obj\Debug\net8.0\PosExpress.AccesoDatos.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\obj\Debug\net8.0\PosExpress.AccesoDatos.genruntimeconfig.cache

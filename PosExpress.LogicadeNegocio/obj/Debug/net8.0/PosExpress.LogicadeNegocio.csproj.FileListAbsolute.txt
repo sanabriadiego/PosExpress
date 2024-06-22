@@ -1,0 +1,15 @@
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\bin\Debug\net8.0\PosExpress.LogicadeNegocio.deps.json
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\bin\Debug\net8.0\PosExpress.LogicadeNegocio.dll
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\bin\Debug\net8.0\PosExpress.LogicadeNegocio.pdb
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\bin\Debug\net8.0\PosExpress.AccesoDatos.dll
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\bin\Debug\net8.0\PosExpress.AccesoDatos.pdb
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debug\net8.0\PosExpress.LogicadeNegocio.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debug\net8.0\PosExpress.LogicadeNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debug\net8.0\PosExpress.LogicadeNegocio.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debug\net8.0\PosExpress.LogicadeNegocio.AssemblyInfo.cs
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debug\net8.0\PosExpress.LogicadeNegocio.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debug\net8.0\PosExpre.26D47B4C.Up2Date
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debug\net8.0\PosExpress.LogicadeNegocio.dll
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debug\net8.0\refint\PosExpress.LogicadeNegocio.dll
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debug\net8.0\PosExpress.LogicadeNegocio.pdb
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debug\net8.0\ref\PosExpress.LogicadeNegocio.dll

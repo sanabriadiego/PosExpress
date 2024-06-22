@@ -13,3 +13,4 @@ C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debu
 C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debug\net8.0\refint\PosExpress.LogicadeNegocio.dll
 C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debug\net8.0\PosExpress.LogicadeNegocio.pdb
 C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debug\net8.0\ref\PosExpress.LogicadeNegocio.dll
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.LogicadeNegocio\obj\Debug\net8.0\PosExpress.LogicadeNegocio.sourcelink.json

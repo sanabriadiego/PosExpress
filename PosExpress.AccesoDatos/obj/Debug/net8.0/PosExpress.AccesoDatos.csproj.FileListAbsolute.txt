@@ -12,3 +12,4 @@ C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\obj\Debug\ne
 C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\bin\Debug\net8.0\PosExpress.AccesoDatos.runtimeconfig.json
 C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\obj\Debug\net8.0\PosExpress.AccesoDatos.csproj.AssemblyReference.cache
 C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\obj\Debug\net8.0\PosExpress.AccesoDatos.genruntimeconfig.cache
+C:\Users\PC\Documents\cs-projects\PosExpress\PosExpress.AccesoDatos\obj\Debug\net8.0\PosExpress.AccesoDatos.sourcelink.json

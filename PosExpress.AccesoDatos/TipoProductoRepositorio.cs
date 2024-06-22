@@ -5,30 +5,30 @@ using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
+using PosExpress.AccesoDatos.Entidades;
 
 namespace PosExpress.AccesoDatos
 {
-    public class TipoProductoRepositorio
+    public class TipoProductoRepositorio : ITipoProductoRepositorio
     {
         private readonly AppDbContext _context;
 
-        public TipoProductoRepositorio()
+        public TipoProductoRepositorio(AppDbContext context)
         {
-            _context = new AppDbContext();
+            _context = context;
         }
 
-        public void Add(Entidades.TipoProducto tipo_producto)
+        public void Add(TipoProducto tipo_producto)
         {
             _context.TiposProducto.Add(tipo_producto);
-            _context.SaveChanges();
         }
 
-        public IEnumerable<Entidades.TipoProducto> GetAll()
+        public IEnumerable<TipoProducto> GetAll()
         {
             return _context.TiposProducto.ToList();
         }
 
-        public Entidades.TipoProducto GetById(int tipo_productoId)
+        public TipoProducto GetById(int tipo_productoId)
         {
             return _context.TiposProducto
                 .FirstOrDefault(tp => tp.IdTipoProducto == tipo_productoId);

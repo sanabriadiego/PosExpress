@@ -14,8 +14,9 @@ namespace PosExpress.AccesoDatos.Entidades
         public bool Activo { get; set; }
         public DateOnly Fecha_Vencimiento { get; set; }
         public string Observaciones { get; set; }
-
         public TipoProducto TipoProducto { get; set; }
+        public ICollection<ProductosCategorias> ProductosCategorias { get; set; }
+        public virtual ErpProducto ErpProducto { get; set; }
 
     }
 }

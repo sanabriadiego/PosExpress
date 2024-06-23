@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PosExpress.AccesoDatos;
 
@@ -11,9 +12,11 @@ using PosExpress.AccesoDatos;
 namespace PosExpress.AccesoDatos.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240623003346_Modified_ProductosCategorias")]
+    partial class Modified_ProductosCategorias
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -45,54 +48,6 @@ namespace PosExpress.AccesoDatos.Migrations
                     b.ToTable("Categorias");
                 });
 
-            modelBuilder.Entity("PosExpress.AccesoDatos.Entidades.CodigoBarras", b =>
-                {
-                    b.Property<int>("IdCodigoBarra")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCodigoBarra"));
-
-                    b.Property<bool>("Activo")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(true);
-
-                    b.Property<int>("ExpProductoIdProducto")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UniqueCodigo")
-                        .HasColumnType("int");
-
-                    b.HasKey("IdCodigoBarra");
-
-                    b.HasIndex("ExpProductoIdProducto");
-
-                    b.ToTable("CodigosBarras");
-                });
-
-            modelBuilder.Entity("PosExpress.AccesoDatos.Entidades.ErpProducto", b =>
-                {
-                    b.Property<int>("IdProducto")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Costo")
-                        .HasColumnType("decimal(10,2)");
-
-                    b.Property<DateTime>("FechaRegistro")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Stock")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UniqueCodigo")
-                        .HasColumnType("int");
-
-                    b.HasKey("IdProducto");
-
-                    b.ToTable("ErpProductos");
-                });
-
             modelBuilder.Entity("PosExpress.AccesoDatos.Entidades.ExpProducto", b =>
                 {
                     b.Property<int>("IdProducto")
@@ -121,7 +76,7 @@ namespace PosExpress.AccesoDatos.Migrations
                         .HasDefaultValue("");
 
                     b.Property<decimal>("Precio")
-                        .HasColumnType("decimal(10,2)");
+                        .HasColumnType("decimal(5,2)");
 
                     b.Property<int>("TipoProductoIdTipoProducto")
                         .HasColumnType("int");
@@ -177,76 +132,6 @@ namespace PosExpress.AccesoDatos.Migrations
                     b.ToTable("TiposProducto");
                 });
 
-            modelBuilder.Entity("PosExpress.AccesoDatos.Entidades.VentaExpress", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("Cantidad")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Cliente")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<decimal>("Descuento")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("decimal(3,2)")
-                        .HasDefaultValue(0.0m);
-
-                    b.Property<int>("ExpProductoIdProducto")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("Fecha")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal>("Precio")
-                        .HasColumnType("decimal(10,2)");
-
-                    b.Property<string>("Producto")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<decimal>("Total")
-                        .HasColumnType("decimal(10,2)");
-
-                    b.Property<int>("UniqueProducto")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ExpProductoIdProducto");
-
-                    b.ToTable("VentaExpress");
-                });
-
-            modelBuilder.Entity("PosExpress.AccesoDatos.Entidades.CodigoBarras", b =>
-                {
-                    b.HasOne("PosExpress.AccesoDatos.Entidades.ExpProducto", "ExpProducto")
-                        .WithMany()
-                        .HasForeignKey("ExpProductoIdProducto")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ExpProducto");
-                });
-
-            modelBuilder.Entity("PosExpress.AccesoDatos.Entidades.ErpProducto", b =>
-                {
-                    b.HasOne("PosExpress.AccesoDatos.Entidades.ExpProducto", "ExpProducto")
-                        .WithOne("ErpProducto")
-                        .HasForeignKey("PosExpress.AccesoDatos.Entidades.ErpProducto", "IdProducto")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ExpProducto");
-                });
-
             modelBuilder.Entity("PosExpress.AccesoDatos.Entidades.ExpProducto", b =>
                 {
                     b.HasOne("PosExpress.AccesoDatos.Entidades.TipoProducto", "TipoProducto")
@@ -277,17 +162,6 @@ namespace PosExpress.AccesoDatos.Migrations
                     b.Navigation("ExpProducto");
                 });
 
-            modelBuilder.Entity("PosExpress.AccesoDatos.Entidades.VentaExpress", b =>
-                {
-                    b.HasOne("PosExpress.AccesoDatos.Entidades.ExpProducto", "ExpProducto")
-                        .WithMany()
-                        .HasForeignKey("ExpProductoIdProducto")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ExpProducto");
-                });
-
             modelBuilder.Entity("PosExpress.AccesoDatos.Entidades.Categoria", b =>
                 {
                     b.Navigation("ProductosCategorias");
@@ -295,9 +169,6 @@ namespace PosExpress.AccesoDatos.Migrations
 
             modelBuilder.Entity("PosExpress.AccesoDatos.Entidades.ExpProducto", b =>
                 {
-                    b.Navigation("ErpProducto")
-                        .IsRequired();
-
                     b.Navigation("ProductosCategorias");
                 });
 #pragma warning restore 612, 618

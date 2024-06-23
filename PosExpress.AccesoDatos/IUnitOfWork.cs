@@ -9,6 +9,7 @@ namespace PosExpress.AccesoDatos
     public interface IUnitOfWork : IDisposable
     {
         ITipoProductoRepositorio TiposProducto { get; }
+        ICategoriaRepositorio Categorias {  get; }
         int Complete();
     }
 }

@@ -20,30 +20,52 @@ namespace PosExpress.Presentacion
                 .AddSingleton<ITipoProductoServicio, TipoProductoServicio>()
                 .BuildServiceProvider();
 
+            var catServiveProvider = new ServiceCollection()
+                .AddDbContext<AppDbContext>()
+                .AddSingleton<ICategoriaRepositorio, CategoriaRepositorio>()
+                .AddSingleton<IUnitOfWork, UnitOfWork>()
+                .AddSingleton<ICategoriaServicio, CategoriaServicio>()
+                .BuildServiceProvider();
+
             var service = serviceProvider.GetService<ITipoProductoServicio>();
+
+            var cat_service = catServiveProvider.GetService<ICategoriaServicio>();
 
             while (true)
             {
+                Console.WriteLine("-------------------------------------------");
                 Console.WriteLine("1. Agregar Tipo de Producto");
                 Console.WriteLine("2. Mostrar todos los Tipo de Productos");
-                Console.WriteLine("3. Exit");
-                Console.Write("Escoge una opcion: ");
+                Console.WriteLine("3. Agregar Categoria");
+                Console.WriteLine("4. Mostrar todas las Categorias");
+                Console.WriteLine("5. Agregar Nuevo Producto");
+                Console.WriteLine("0. Exit");
+                Console.Write("Escoge una opcion: \n");
+                Console.WriteLine("-------------------------------------------");
                 var choice = Console.ReadLine();
 
                 switch (choice)
                 {
-                case "1":
-                    service.AddTipoProducto();
-                    Console.WriteLine("Tipo de Producto agregado!");
-                    break;
-                case "2":
-                    service.GetProducts();
-                    break;
-                case "3":
-                    return;
-                default:
-                    Console.WriteLine("Invalid option. Please try again.");
-                    break;
+                    case "1":
+                        service.AddTipoProducto();
+                        Console.WriteLine("Tipo de Producto agregado!");
+                        break;
+                    case "2":
+                        service.GetProducts();
+                        break;
+                    case "3":
+                        cat_service.AddCategoria();
+                        break;
+                    case "4":
+                        cat_service.GetCategorias();
+                        break;
+                    case "5":
+                        break;
+                    case "0":
+                        return;
+                    default:
+                        Console.WriteLine("Opcion invalida, intente de nuevo");
+                        break;
                 }
             }
         }

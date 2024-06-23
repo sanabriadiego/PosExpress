@@ -26,6 +26,7 @@ namespace PosExpress.LogicadeNegocio
             tipo_producto.Descripcion = descripcion;
             _unitOfWork.TiposProducto.Add(tipo_producto);
             _unitOfWork.Complete();
+            Console.WriteLine("Tipo Producto creado!");
         }
 
         public void GetProducts()

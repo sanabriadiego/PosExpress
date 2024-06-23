@@ -14,9 +14,11 @@ namespace PosExpress.AccesoDatos
         {
             _context = context;
             TiposProducto = new TipoProductoRepositorio(_context);
+            Categorias = new CategoriaRepositorio(_context);
         }
 
         public ITipoProductoRepositorio TiposProducto { get; private set; }
+        public ICategoriaRepositorio Categorias { get; private set; }
 
         public int Complete() 
         {

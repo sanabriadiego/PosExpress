@@ -13,7 +13,7 @@ namespace PosExpress.AccesoDatos.Entidades
         public DateTime Fecha { get; set; }
         public string Cliente { get; set; }
         public string Producto { get; set; }
-        public int UniqueProducto { get; set; }
+        public string UniqueProducto { get; set; }
         public int Cantidad { get; set; }
         public decimal Precio { get; set; }
         public decimal Descuento { get; set; }

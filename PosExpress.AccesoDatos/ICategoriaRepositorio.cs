@@ -11,5 +11,6 @@ namespace PosExpress.AccesoDatos
     {
         void Add(Categoria categoria);
         IEnumerable<Categoria> GetAll();
+        public Categoria GetByDescripcion(string descripcion);
     }
 }

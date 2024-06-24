@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PosExpress.Presentacion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0bdc4055f83b5e30784ce19e1ebbbdade49237f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c199288d6bb4ec12714c6c32c4b77b2f6ffff23")]
 [assembly: System.Reflection.AssemblyProductAttribute("PosExpress.Presentacion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PosExpress.Presentacion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

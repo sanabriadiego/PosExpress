@@ -13,6 +13,7 @@ namespace PosExpress.AccesoDatos
         void Add(TipoProducto tipo_producto);
         IEnumerable<TipoProducto> GetAll();
         TipoProducto GetById(int tipo_productoId);
+        TipoProducto GetByDescripcion(string descripcion);
 
     }
 }

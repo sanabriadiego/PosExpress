@@ -10,6 +10,10 @@ namespace PosExpress.AccesoDatos
     {
         ITipoProductoRepositorio TiposProducto { get; }
         ICategoriaRepositorio Categorias {  get; }
+        IErpProductoRepositorio ErpProductos { get; }
+        IVentaExpressRepositorio VentaExpress {  get; }
+        IExpProductoRepositorio ExpProductos { get; }
+        IProductosCategoriasRepositorio Productos_Categorias { get;  }
         int Complete();
     }
 }

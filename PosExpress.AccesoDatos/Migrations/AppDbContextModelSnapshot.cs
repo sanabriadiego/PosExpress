@@ -61,8 +61,10 @@ namespace PosExpress.AccesoDatos.Migrations
                     b.Property<int>("ExpProductoIdProducto")
                         .HasColumnType("int");
 
-                    b.Property<int>("UniqueCodigo")
-                        .HasColumnType("int");
+                    b.Property<string>("UniqueCodigo")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("IdCodigoBarra");
 
@@ -85,8 +87,10 @@ namespace PosExpress.AccesoDatos.Migrations
                     b.Property<int>("Stock")
                         .HasColumnType("int");
 
-                    b.Property<int>("UniqueCodigo")
-                        .HasColumnType("int");
+                    b.Property<string>("UniqueCodigo")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("IdProducto");
 
@@ -215,8 +219,10 @@ namespace PosExpress.AccesoDatos.Migrations
                     b.Property<decimal>("Total")
                         .HasColumnType("decimal(10,2)");
 
-                    b.Property<int>("UniqueProducto")
-                        .HasColumnType("int");
+                    b.Property<string>("UniqueProducto")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 

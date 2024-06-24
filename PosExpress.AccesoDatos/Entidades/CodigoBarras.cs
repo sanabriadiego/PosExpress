@@ -9,8 +9,8 @@ namespace PosExpress.AccesoDatos.Entidades
     public class CodigoBarras
     {
         public int IdCodigoBarra { get; set; }
-        public int UniqueCodigo {  get; set; }
-        public bool Activo { get; set; }
+        public string UniqueCodigo {  get; set; }
+        public bool Activo { get; set; } = true;
         public ExpProducto ExpProducto { get; set; }
 
     }

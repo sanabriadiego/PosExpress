@@ -85,6 +85,7 @@ namespace PosExpress.AccesoDatos
                     .HasMaxLength(100)
                     .IsRequired(true);
                 entity.Property(ve => ve.UniqueProducto)
+                    .HasMaxLength(50)
                     .IsRequired(true);
                 entity.Property(ve => ve.Cantidad)
                     .IsRequired(true);
@@ -106,11 +107,12 @@ namespace PosExpress.AccesoDatos
                     .HasColumnType("decimal(10,2)")
                     .IsRequired(true);
                 entity.Property(p => p.UniqueCodigo)
-                   .IsRequired(true);
+                    .HasMaxLength(50)
+                    .IsRequired(true);
                 entity.Property(p => p.FechaRegistro)
-                   .IsRequired(true);
+                    .IsRequired(true);
                 entity.Property(p => p.Stock)
-                   .IsRequired(true);
+                    .IsRequired(true);
 
             });
 
@@ -118,6 +120,7 @@ namespace PosExpress.AccesoDatos
             {
                 entity.HasKey(cb => cb.IdCodigoBarra);
                 entity.Property(cb => cb.UniqueCodigo)
+                   .HasMaxLength(50)
                    .IsRequired(true);
                 entity.Property(cb => cb.Activo)
                    .IsRequired(true)

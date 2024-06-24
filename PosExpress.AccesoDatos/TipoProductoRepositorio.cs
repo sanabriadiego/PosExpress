@@ -33,5 +33,10 @@ namespace PosExpress.AccesoDatos
             return _context.TiposProducto
                 .FirstOrDefault(tp => tp.IdTipoProducto == tipo_productoId);
         }
+        public TipoProducto GetByDescripcion(string descripcion) 
+        {
+            return _context.TiposProducto.SingleOrDefault(tp => tp.Descripcion == descripcion);
+        }
+        
     }
 }

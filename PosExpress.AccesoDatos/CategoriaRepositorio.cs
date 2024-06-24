@@ -25,5 +25,10 @@ namespace PosExpress.AccesoDatos
         {
             return _context.Categorias.ToList();
         }
+
+        public Categoria GetByDescripcion(string descripcion)
+        {
+            return _context.Categorias.SingleOrDefault(c => c.Descripcion == descripcion);
+        }
     }
 }

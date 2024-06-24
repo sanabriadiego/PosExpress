@@ -10,7 +10,7 @@ namespace PosExpress.AccesoDatos.Entidades
     {
         public int IdCategoria { get; set; }
         public string Descripcion { get; set; }
-        public bool Activo { get; set; }
+        public bool Activo { get; set; } = true;
         public ICollection<ProductosCategorias> ProductosCategorias { get; set; }
     }
 }

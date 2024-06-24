@@ -13,7 +13,7 @@ namespace PosExpress.AccesoDatos.Entidades
         [ForeignKey("ExpProducto")]
         public int IdProducto { get; set; }
         public decimal Costo { get; set; }
-        public int UniqueCodigo { get; set; }
+        public string UniqueCodigo { get; set; }
         public DateTime FechaRegistro { get; set; }
         public int Stock {  get; set; }
         public virtual ExpProducto ExpProducto { get; set; }
